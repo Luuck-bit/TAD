@@ -97,18 +97,18 @@
     <main>
         <div id="div1"></div>
         <div class="form-container">
-            <form action="">
+            <form action="" id="formLogin">
                 <label for="login">Email ou usuário:</label>
                 <input type="text" id="login" name="login" placeholder="Insira seu email ou username">
                 <label for="senha">Senha:</label>
                 <input type="password" id="senha" name="senha" placeholder="Insira sua senha">
                 <a href="./TadCalcs.html"><input type="button" value="Entrar"></a>
-                <a href="" style="color: #fff;"><p>Cadastre-se</p></a>
+                <a href="" style="color: #fff;" id="cadastro"><p>Cadastre-se</p></a>
             </form>
         </div>
     </main>
 </body>
-    <script>
+<script>
     const frm = document.getElementById('formLogin');
     const cadastro = document.getElementById('cadastro')
 
