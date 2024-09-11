@@ -108,4 +108,20 @@
         </div>
     </main>
 </body>
+    <script>
+    const frm = document.getElementById('formLogin');
+    const cadastro = document.getElementById('cadastro')
+
+    cadastro.addEventListener('click', (e) => {
+        e.preventDefault()
+        frm.innerHTML = `
+                <h2 style="color: #fff; margin-bottom: 1rem">Cadastro de usuário:</h2>
+                <label for="login">Insira um Email ou Nome de usuário</label>
+                <input type="text" id="login" name="login" placeholder="Insira seu email ou username">
+                <label for="senha">Crie uma senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Insira uma senha">
+                <a href="./TadCalcs.html"><input type="button" value="Cadastar"></a>
+        `
+    })
+</script>
 </html>
