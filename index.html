@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - TadCalc</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        main {
+            display: flex;
+            height: 100vh; 
+        }
+        #div1 {
+            height: 100%;
+            width: 50%;
+            background-image: url('./img/red-dead-redemption-2-arthur-writing.avif');
+            background-size: cover;
+            background-position: center;
+        }
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50%;
+            padding: 2rem;
+            background: linear-gradient(to right, #222C38, brown)
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 400px; 
+        }
+        label {
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+            color: #fff;
+        }
+        input {
+            margin-bottom: 1rem;
+            padding: 0.5rem;
+            font-size: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%;
+        }
+        input[type="button"] {
+            background-color: #354150;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 0.75rem;
+            font-size: 1rem;
+            border-radius: 4px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        @media (max-width: 1024px) {
+    main {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #div1 {
+        width: 100%;
+        height: 50vh; 
+    }
+
+    .form-container {
+        width: 100%;
+        padding: 1rem;
+    }
+
+    form {
+        max-width: 90%;
+    }
+
+    input[type="button"] {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <main>
+        <div id="div1"></div>
+        <div class="form-container">
+            <form action="">
+                <label for="login">Email ou usuário:</label>
+                <input type="text" id="login" name="login" placeholder="Insira seu email ou username">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" placeholder="Insira sua senha">
+                <a href="./TadCalcs.html"><input type="button" value="Entrar"></a>
+                <a href="" style="color: #fff;"><p>Cadastre-se</p></a>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
