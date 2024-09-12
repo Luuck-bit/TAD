@@ -26,9 +26,9 @@ button.addEventListener('click', (event) => {
     let mesesTrabalhados = parseInt(document.getElementById('mesesTrabalhados').value);
 
     if (mesesTrabalhados > 12){
-        mesesTrabalhados = 12
+        mesesTrabalhados = 12;
     }else if(mesesTrabalhados <= 12)
-        mesesTrabalhados = mesesTrabalhados
+        mesesTrabalhados = mesesTrabalhados;
     }
     
         
