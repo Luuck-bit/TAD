@@ -68,7 +68,7 @@ button.addEventListener('click', (event) => {
     }
 
     // Cálculo do Décimo Terceiro Salário
-    const decimoTerceiro = salario * (mesesTrabalhados / 12);
+    const decimoTerceiro = (salario / 12) * mesesTrabalhados - inss - ir;
 
     // Cálculo do Auxílio-Doença
     const mediaAuxilio = salario * 0.90; // 90% do salário
