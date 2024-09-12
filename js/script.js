@@ -79,10 +79,9 @@ button.addEventListener('click', (event) => {
     const auxilioDoenca = 0;
     if (mesesTrabalhados < 12){
     auxilioDoenca = 0;
+    }else if(mesesTrabalhados >= 12){ 
+    auxilioDoenca = ((salario * 12) / 12) * 0.90;
     }
-    else{ 
-   auxilioDoenca = ((salario * 12) / 12) * 0.90;
-   }
     let valorParcela = 0;
     const mediaAuxilio = salario;
 
