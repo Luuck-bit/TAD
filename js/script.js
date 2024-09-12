@@ -73,6 +73,15 @@ button.addEventListener('click', (event) => {
     // Cálculo do Auxílio-Doença
     const mediaAuxilio = salario * 0.90; // 90% do salário
 
+     let valorParcela = 0;
+    if (salario <= 1640.34) {
+        valorParcela = salario * 0.8;
+    } else if (salario > 1640.34 && salario <= 2736.27) {
+        valorParcela = 1640.34 * 0.8 + 0.5 * (salario - 1640.34);
+    } else {
+        valorParcela = 1909.34; // Valor fixo para salários acima de 2736.27
+    }
+
     resultados.innerHTML = `
         <table border="1">
             <tr><td>Cargo:</td><td>${cargo.value}</td></tr>
@@ -82,6 +91,7 @@ button.addEventListener('click', (event) => {
             <tr><td>Desconto IR:</td><td>${ir.toFixed(2)}</td></tr>
             <tr><td>Décimo Terceiro:</td><td>${decimoTerceiro.toFixed(2)}</td></tr>
             <tr><td>Auxílio-doença:</td><td>${mediaAuxilio.toFixed(2)}</td></tr>
+            <tr><td>Seguro desemprego:</td><td>${valorParcela.toFixed(2)}</td></tr>
         </table>
     `;
 });
