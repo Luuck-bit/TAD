@@ -76,7 +76,7 @@ button.addEventListener('click', (event) => {
     const decimoTerceiro = ((mesesTrabalhados / 12) * salario) - inss - ir;
 
    
-    const auxilioDoenca = (salario / 12) * 0.91;
+    const auxilioDoenca = ((salario * 12) / 12) * 0.91;
 
     
     let valorParcela = 0;
