@@ -23,7 +23,15 @@ button.addEventListener('click', (event) => {
 
     const salario = parseFloat(document.getElementById('salario').value);
     const refeicao = parseFloat(document.getElementById('refeicao').value);
-    const mesesTrabalhados = parseInt(document.getElementById('mesesTrabalhados').value);
+    let mesesTrabalhados = parseInt(document.getElementById('mesesTrabalhados').value);
+
+    if (mesesTrabalhados > 12){
+        mesesTrabalhados = 12
+    }else if(mesesTrabalhados <= 12)
+        mesesTrabalhados = mesesTrabalhados
+    }
+    
+        
 
     const dadosVt = salario * 0.06; // VT
     const valorVa = 22 * refeicao;
